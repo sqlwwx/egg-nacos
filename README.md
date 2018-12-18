@@ -9,12 +9,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-nacos.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-nacos
-[travis-image]: https://img.shields.io/travis/eggjs/egg-nacos.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-nacos
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-nacos.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-nacos?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-nacos.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-nacos
+[travis-image]: https://img.shields.io/travis/sqlwwx/egg-nacos.svg?style=flat-square
+[travis-url]: https://travis-ci.org/sqlwwx/egg-nacos
+[codecov-image]: https://img.shields.io/codecov/c/github/sqlwwx/egg-nacos.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/sqlwwx/egg-nacos?branch=master
+[david-image]: https://img.shields.io/david/sqlwwx/egg-nacos.svg?style=flat-square
+[david-url]: https://david-dm.org/sqlwwx/egg-nacos
 [snyk-image]: https://snyk.io/test/npm/egg-nacos/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-nacos
 [download-image]: https://img.shields.io/npm/dm/egg-nacos.svg?style=flat-square
@@ -56,7 +56,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/sqlwwx/egg-nacos/issues).
 
 ## License
 
