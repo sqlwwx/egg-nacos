@@ -10,7 +10,9 @@
     "eggPlugin",
     "egg-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "nacos": "^1.0.2"
+  },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-conventional": "^7.1.2",
@@ -42,9 +44,10 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
+    "config",
     "agent.js",
-    "config"
+    "lib",
+    "app.js"
   ],
   "ci": {
     "version": "8, 9"

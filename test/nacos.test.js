@@ -17,7 +17,7 @@ describe('test/nacos.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('hi, nacos')
+      .expect('subscribe:null,subscribe:测试,get:null,set:true,get:测试,remove:true')
       .expect(200);
   });
 });

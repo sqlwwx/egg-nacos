@@ -6,5 +6,9 @@
  * @property {String} SOME_KEY - some description
  */
 exports.nacos = {
+  default: {
+  },
+  app: true,
+  agent: false,
 
 };

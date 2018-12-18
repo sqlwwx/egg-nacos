@@ -458,7 +458,7 @@ acorn@^5.0.0, acorn@^5.5.0:
   resolved "http://registry.npm.taobao.org/acorn/download/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
   integrity sha1-Z6ojG/iBKXS4UjWpZ3Hra9B+onk=
 
-address@>=0.0.1, address@^1.0.1:
+address@>=0.0.1, address@^1.0.1, address@^1.0.3:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/address/download/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
   integrity sha1-tfUGMfjWzsi9IMljljr7VeBsvOk=
@@ -1975,6 +1975,13 @@ co-busboy@^1.4.0:
     black-hole-stream "~0.0.1"
     busboy "^0.2.8"
     chan "^0.6.1"
+
+co-gather@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/co-gather/download/co-gather-1.0.0.tgz#d892593a567a38a9d3a6b2e4bb5f9f7e4d60eb3f"
+  integrity sha1-2JJZOlZ6OKnTprLku1+ffk1g6z8=
+  dependencies:
+    co "^4.6.0"
 
 co-mocha@^1.2.2:
   version "1.2.2"
@@ -4265,7 +4272,7 @@ iconv-lite@0.4.23:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-iconv-lite@^0.4.15, iconv-lite@^0.4.17, iconv-lite@^0.4.24, iconv-lite@^0.4.4:
+iconv-lite@^0.4.15, iconv-lite@^0.4.17, iconv-lite@^0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.11:
   version "0.4.24"
   resolved "http://registry.npm.taobao.org/iconv-lite/download/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   integrity sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=
@@ -5714,6 +5721,44 @@ mz@^2.6.0, mz@^2.7.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
+nacos-config@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/nacos-config/download/nacos-config-1.0.2.tgz#aa423c70d3c9d49cee62af0ce92ff274117cebce"
+  integrity sha1-qkI8cNPJ1JzuYq8M6S/ydBF8684=
+  dependencies:
+    cluster-client "^2.1.1"
+    co-gather "^1.0.0"
+    debug "^3.1.0"
+    iconv-lite "^0.4.24"
+    is-type-of "^1.2.0"
+    mz "^2.7.0"
+    mz-modules "^2.1.0"
+    osenv "^0.1.5"
+    sdk-base "^3.5.0"
+    urlencode "^1.1.0"
+    urllib "^2.29.1"
+    utility "^1.14.0"
+
+nacos-naming@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/nacos-naming/download/nacos-naming-1.0.0.tgz#007adf7cfa9ae3befb2c5246ea506287542dfb2e"
+  integrity sha1-AHrffPqa4777LFJG6lBih1Qt+y4=
+  dependencies:
+    address "^1.0.3"
+    mz-modules "^2.1.0"
+    sdk-base "^3.5.1"
+    urllib "^2.31.2"
+    utility "^1.15.0"
+    uuid "^3.3.2"
+
+nacos@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/nacos/download/nacos-1.0.2.tgz#01c2dd61f867ac7300ca5642b7cbf2ca2b3c45b3"
+  integrity sha1-AcLdYfhnrHMAylZCt8vyyis8RbM=
+  dependencies:
+    nacos-config "^1.0.2"
+    nacos-naming "^1.0.0"
+
 nan@^2.9.2:
   version "2.12.0"
   resolved "http://registry.npm.taobao.org/nan/download/nan-2.12.0.tgz#9d443fdb5e13a20770cc5e602eee59760a685885"
@@ -6054,7 +6099,7 @@ os-tmpdir@^1.0.0, os-tmpdir@^1.0.1, os-tmpdir@~1.0.2:
   resolved "http://registry.npm.taobao.org/os-tmpdir/download/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
 
-osenv@^0.1.4:
+osenv@^0.1.4, osenv@^0.1.5:
   version "0.1.5"
   resolved "http://registry.npm.taobao.org/osenv/download/osenv-0.1.5.tgz#85cdfafaeb28e8677f416e287592b5f3f49ea410"
   integrity sha1-hc36+uso6Gd/QW4odZK18/SepBA=
@@ -7778,7 +7823,14 @@ urix@^0.1.0:
   resolved "http://registry.npm.taobao.org/urix/download/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
-urllib@^2.24.0, urllib@^2.25.1, urllib@^2.29.1, urllib@^2.31.1:
+urlencode@^1.1.0:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/urlencode/download/urlencode-1.1.0.tgz#1f2ba26f013c85f0133f7a3ad6ff2730adf7cbb7"
+  integrity sha1-HyuibwE8hfATP3o61v8nMK33y7c=
+  dependencies:
+    iconv-lite "~0.4.11"
+
+urllib@^2.24.0, urllib@^2.25.1, urllib@^2.29.1, urllib@^2.31.1, urllib@^2.31.2:
   version "2.31.3"
   resolved "http://registry.npm.taobao.org/urllib/download/urllib-2.31.3.tgz#10fe5e71c242376e1450cc43573ac485db19029f"
   integrity sha1-EP5eccJCN24UUMxDVzrEhdsZAp8=
